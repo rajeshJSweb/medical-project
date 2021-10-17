@@ -1,0 +1,138 @@
+[
+    {
+        "key": "B002RL8IYK",
+        "country": "Bangladesh",
+        "cityName": "Dhaka",
+        "placeName": "Ahsan Manzil Museum",
+        "distance": "3km",
+        "travelCost": 500,
+        "star": 3,
+        "starCount": 3245,
+        "img": "https://i.ibb.co/WpQFmfR/ahsan-mazil.jpg"
+    },
+    {
+        "key": "B0021L8IYK",
+        "country": "Bangladesh",
+        "cityName": "Sylhet",
+        "placeName": "Jaflong",
+        "distance": "10km",
+        "travelCost": 700,
+        "star": 3,
+        "starCount": 3245,
+        "img": "https://i.ibb.co/p0GgxJ7/zaflong.jpg"
+    },
+    {
+        "key": "B002RLKIYK",
+        "country": "Bangladesh",
+        "cityName": "Chittagong",
+        "placeName": "Cox's Bazar",
+        "distance": "10km from Dhaka",
+        "travelCost": 900,
+        "ratting": 3,
+        "rattingCount": 4245,
+        "img": "./Images/cox baazar.jpg"
+    },
+    {
+        "key": "B002R78IYK",
+        "country": "Bangladesh",
+        "cityName": "Chittagong",
+        "placeName": "Saint Martin",
+        "distance": "10km",
+        "travelCost": 850,
+        "star": 5,
+        "starCount": 5245,
+        "img": "https://i.ibb.co/X3BRDK6/saint-martin.jpg"
+    },
+    {
+        "key": "BJJ2RL8IYK",
+        "country": "India",
+        "cityName": "Agra, ‎Uttar Pradesh‎",
+        "placeName": "The Taj Mahal",
+        "distance": "500km",
+        "travelCost": 1500,
+        "star": 4.5,
+        "starCount": 545,
+        "img": "https://i.ibb.co/0GzgTcr/taj-mahal.jpg",
+        "url":""
+    }
+    ,
+    {
+        "key": "B332RL8IYK",
+        "country": "India",
+        "cityName": "Himachal Pradesh‎",
+        "placeName": "Manali",
+        "distance": "500km",
+        "travelCost": 1500,
+        "star": 4.5,
+        "starCount": 545,
+        "img": "https://i.ibb.co/pdm9jzB/manali.jpg"
+    },
+    {
+        "key": "B052RL8IYK",
+        "country": "India",
+        "cityName": "Ladakh",
+        "placeName": "Pangong Tso",
+        "distance": "350km",
+        "travelCost": 1000,
+        "star": 5,
+        "starCount": 245,
+        "img": "https://i.ibb.co/9wKL4hL/Landscape-with-reflections-of-the-mountains-on-the-lake-named-Pangong-Tso-situated-around-Leh-Ladakh.jpg"
+    },
+    {
+        "key": "B002RLOIYK",
+        "country": "India",
+        "cityName": "Town in Meghalaya‎",
+        "placeName": "Cherrapunji‎",
+        "distance": "500km",
+        "travelCost": 799,
+        "star": 3.5,
+        "starCount": 745,
+        "img": "https://i.ibb.co/YZFHG90/cherapuji.jpg",
+        "url":""
+    }
+    ,
+    {
+        "key": "B002KL8IYK",
+        "country": "India",
+        "cityName": "Meghalaya",
+        "placeName": "Dawki",
+        "distance": "550km",
+        "travelCost": 1200,
+        "star": 4,
+        "starCount": 845,
+        "img": "https://i.ibb.co/kGCTWJ5/dawki.jpg"
+    },
+    {
+        "key": "B002RL8IY0",
+        "country": "Bangladesh",
+        "cityName": "Shatkhira,Khulna",
+        "placeName": "Sundarbans",
+        "distance": "300km",
+        "travelCost": 600,
+        "star": 4.3,
+        "starCount": 555,
+        "img": "https://i.ibb.co/D1JX4qf/sundarbans.jpg"
+    },
+    {
+        "key": "B002RL8IY7",
+        "country": "Bangladesh",
+        "cityName": "Sreemangal,Moulovibazar",
+        "placeName": "Hum Hum Waterfall",
+        "distance": "370km",
+        "travelCost": 450,
+        "star": 3,
+        "starCount": 575,
+        "img": "https://i.ibb.co/XC64FCx/hum-hum.jpg"
+    },
+    {
+        "key": "B008RL8IYK",
+        "country": "India",
+        "cityName": "Uttar Pradesh",
+        "placeName": "The Holy City of Varanasi",
+        "distance": "770km",
+        "travelCost": 350,
+        "star": 3,
+        "starCount": 75,
+        "img": "https://i.ibb.co/rfFh562/holycity.jpg"
+    }
+]
