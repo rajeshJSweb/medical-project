@@ -25,29 +25,23 @@ const Header = () => {
 
     return (
 <div className="mb-3">
-<div className="top-header">
-<Navbar bg="dark" variant="dark">
-    <Container className="container">
-    <p className="text-white">support@novena.com Address Ta-134/A, New York, USA</p>
-    <Nav>
-     <p className="text-white">Call Now: 01714121645</p>
-    </Nav>
-    </Container>
-  </Navbar>
+<div className="top-header bg-dark d-flex">
+        <p className="text-white">support@medibles.com</p>
+            <small className="text-white">Address: 25/D, Khanbangla Road, Kolkolani, Jamalpur</small>
  </div>
 
 <Navbar bg="light" expand="lg">
   <Container>
-    <Navbar.Brand href="/home">Medibles</Navbar.Brand>
+    <Navbar.Brand href="/home" className='site-title'>M<span className='medi'>edibles</span></Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
-    <Nav className="me-auto">
-      <Nav.Link href="/home#home">Home</Nav.Link>
-      <Nav.Link href="/about">About</Nav.Link>
-      <Nav.Link href="/home#service">Service</Nav.Link>
-      <Nav.Link href="/contact">Contact</Nav.Link>
-      <Nav.Link href="/articles">Articles</Nav.Link>
-      <Nav.Link href="/login">Login</Nav.Link>
+    <Nav className="me-auto menu-items">
+      <Nav.Link className="menu-item" href="/home#home">Home</Nav.Link>
+      <Nav.Link className="menu-item" href="/about">About</Nav.Link>
+      <Nav.Link className="menu-item" href="/home#service">Service</Nav.Link>
+      <Nav.Link className="menu-item" href="/contact">Contact</Nav.Link>
+      <Nav.Link className="menu-item" href="/articles">Articles</Nav.Link>
+      <Nav.Link className="menu-item" href="/login">Login</Nav.Link>
                         </Nav>
     <Navbar.Text className="justify-content-end">
             <p>{user.displayName}</p>

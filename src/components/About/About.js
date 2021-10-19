@@ -16,7 +16,7 @@ const About = () => {
                 <div className="title">
                     <h1>Personal care for your healthy living</h1>
                 </div>
-                <div className="details">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, minima.</div>
+                <div className="details">Soon after severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) vaccinations became public, menstruating women reported unexpected menstrual bleeding experiences post-vaccination. Unfortunately, menstrual changes were not monitored during vaccine trials, and it wasn't easy to understand whether this observation was coincidental or potentially a side effect.</div>
             </div>
             <Row xs={1} md={4} className="g-4 service">
                 {

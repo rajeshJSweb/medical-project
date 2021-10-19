@@ -21,7 +21,7 @@ const Home = () => {
             </div>
             {/* Services Section */}
             <div className="container mb-5">
-                <h2 className="my-5 text-danger service-title">Our Services</h2>
+                <h2 className="my-5 text-danger service-title px-5">Our Services</h2>
                 <Row xs={1} md={3} className="g-4">
                 {
                     services.map(service => <Services service={service}></Services>)

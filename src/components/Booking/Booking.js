@@ -4,20 +4,21 @@ import { useParams } from 'react-router';
 const Booking = () => {
     const { serviceId } = useParams();
     const [services, setServices] = useState([]);
-    const [singleService, setSingleService] = useState({});
+    const [singleService, setSingleService] = useState();
 
 
     useEffect(() => {
         fetch('/../services.json')
             .then(res => res.json())
-            .then(data => setServices(data))
+            .then(data =>
+                setServices(data))
     }, []);
 
     useEffect(() => {
-        const getService = services.find(service => service === serviceId)
-        console.log(getService);
-        setSingleService(getService)
+        const getServices = services.find(service => service.id === serviceId)
+        console.log(getServices);
     },[services])
+
     return (
         <div>
             <h2>This is booking page: { serviceId}</h2>

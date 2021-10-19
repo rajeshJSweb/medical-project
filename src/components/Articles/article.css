@@ -1,0 +1,9 @@
+.article{
+    opacity: 0.5;
+    background-color: rgb(243, 246, 247);
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
