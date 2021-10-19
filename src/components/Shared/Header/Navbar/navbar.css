@@ -1,0 +1,14 @@
+.top-header{
+    height: 40px;
+}
+@media only screen and(max-width:688px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        padding: 10%; 
+    }
+    .top-header{
+       height: 60px;
+       background-color: blue;
+    }
+}

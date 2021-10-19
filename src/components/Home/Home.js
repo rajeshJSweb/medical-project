@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { Card, Col, Row } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
+import './Home.css'
 import Services from '../Services/Services';
 import Banner from '../Shared/Header/Banner/Banner';
+import About from '../About/About';
+import Specialist from '../Specialist/Specialist';
 
 const Home = () => {
     const [services, setServices] = useState([]);
@@ -13,13 +16,13 @@ const Home = () => {
     return (
         <div>
             {/* Banner / Carousel Section */}
-            <div className="my-5">
+            <div className="mb-5 banner">
                 <Banner></Banner>
             </div>
             {/* Services Section */}
             <div className="container mb-5">
-                <h2 className="my-5">Our Services</h2>
-                <Row xs={1} md={2} className="g-4">
+                <h2 className="my-5 text-danger service-title">Our Services</h2>
+                <Row xs={1} md={3} className="g-4">
                 {
                     services.map(service => <Services service={service}></Services>)
                 }
@@ -27,8 +30,11 @@ const Home = () => {
             </div>
 
             {/* Bonus part */}
-            <div>
-                <h2>This sis bonus</h2>
+            <div id="about" className="container mb-5">
+                <About></About>
+            </div>
+            <div className="container">
+                <Specialist></Specialist>
             </div>
         </div>
     );

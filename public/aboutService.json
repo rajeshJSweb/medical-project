@@ -1,38 +1,26 @@
 [
     {   "id":1,
         "key": "B002RL8IYK",
-        "serviceName": "Child care",
+        "serviceName": "Healthcare for Kids",
         "details": "Saepe nulla praesentium eaque omnis perferendis a doloremque.",
         "img": "https://i.ibb.co/xKkP8pZ/service-1.jpg"
     },
     {   "id":2,
         "key": "B002RL8IYO",
-        "serviceName": "Personal Care",
+        "serviceName": "Medical Counseling",
         "details": "Saepe nulla praesentium eaque omnis perferendis a doloremque.",
         "img": "https://i.ibb.co/BBKgRxJ/service-2.jpg"
     },
     {   "id":3,
         "key": "B002RK8IYK",
-        "serviceName": "CT scan",
+        "serviceName": "Modern Equipments",
         "details": "Saepe nulla praesentium eaque omnis perferendis a doloremque.",
         "img": "https://i.ibb.co/HC1Ymg3/service-3.jpg"
     },
     {   "id":4,
         "key": "B002RL8IBK",
-        "serviceName": "Joint replacement",
+        "serviceName": "Qualified Doctors",
         "details": "Saepe nulla praesentium eaque omnis perferendis a doloremque.",
         "img": "https://i.ibb.co/2qDWm8c/service-4.jpg"
-    },
-    {   "id":5,
-        "key": "B0D2RL8IYK",
-        "serviceName": "Examination & Diagnosis",
-        "details": "Saepe nulla praesentium eaque omnis perferendis a doloremque.",
-        "img": "https://i.ibb.co/CsDWbJb/service-6.jpg"
-    },
-    {   "id":6,
-        "key": "B002RL8IYK",
-        "serviceName": "Alzheimer's disease",
-        "details": "Saepe nulla praesentium eaque omnis perferendis a doloremque.",
-        "img": "https://i.ibb.co/HNPjQMW/service-8.jpg"
     }
 ]

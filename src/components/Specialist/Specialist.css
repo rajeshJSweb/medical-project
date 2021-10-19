@@ -1,0 +1,12 @@
+.div-title{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.buttom-title{
+    color: rgb(173, 8, 8);
+    padding-bottom: 30px;
+    border-bottom: 2px solid red;
+}

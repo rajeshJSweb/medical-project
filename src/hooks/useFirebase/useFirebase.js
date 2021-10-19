@@ -1,52 +1,59 @@
 import initializeAuthenthication from "../../Firebase/Firebase.initialize";
-import { getAuth, signInWithPopup, GoogleAuthProvider,signOut,onAuthStateChanged } from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider,signOut,onAuthStateChanged, createUserWithEmailAndPassword,signInWithEmailAndPassword } from "firebase/auth";
 import { useEffect, useState } from "react";
 
 initializeAuthenthication();
-
 const useFirebase = () => {
-    
     const [user, setUser] = useState({});
+    const [isLoading, setIsLoading] = useState(true);
 
     const googleProvider = new GoogleAuthProvider();
     const auth = getAuth();
 
     const signInUsingGoogle = () => {
-        signInWithPopup(auth, googleProvider)
-            .then(result => {
-                const user = result.user;
-                setUser(result.user);
-            })
-            .catch((error) => {
-            // Handle Errors here.
-            const errorCode = error.code;
-            const errorMessage = error.message;
-          });
+        setIsLoading(true)
+       return signInWithPopup(auth, googleProvider)
+           
     }
 
+    const handleUserRegister = (email, password) => {
+        createUserWithEmailAndPassword(auth, email, password)
+        .then(result => {
+        })
+        .catch((error) => {
+        
+        });
+}
+    
+    const handleUserSignIn = (email, password) => {
+       return signInWithEmailAndPassword(auth, email, password)
+        
+}
+    
     useEffect(() => {
-        onAuthStateChanged(auth, (user) => {
+    const unsubscribe= onAuthStateChanged(auth, (user) => {
             if (user) {
                 setUser(user)
             }
             else {
                 setUser({})
-            }
-        })
+        }
+        setIsLoading(false)
+    })
+        return () => unsubscribe;
     },[])
 
     const logOut = () => {
-        signOut(auth)
-            .then(() => {
-            // Sign-out successful.
-          }).catch((error) => {
-            // An error happened.
-          });
+        setIsLoading(true)
+        return signOut(auth)   
     }
     return {
         user,
         signInUsingGoogle,
-        logOut
+        logOut,
+        handleUserRegister,
+        handleUserSignIn,
+        isLoading
     }
 }
 

@@ -1,20 +1,56 @@
 import Button from '@restart/ui/esm/Button';
-import React from 'react';
+import React, { useState} from 'react';
 import { Form } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useLocation ,useHistory} from 'react-router-dom';
 import useAuth from '../../hooks/useAuth/useAuth';
-import useFirebase from '../../hooks/useFirebase/useFirebase';
 
 const Login = () => {
-    const {signInUsingGoogle}=useAuth();
+    const { handleUserSignIn, signInUsingGoogle } = useAuth();
+    const location = useLocation();
+    const history = useHistory();
+    const redirect_uri = location.state?.from || '/home';
+
+    console.log('object', location.state?.from);
+    
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
+    const handleEmailSubmit = e => {
+        setEmail(e.target.value);
+        console.log(e.target.value);
+      }
+    
+      const handlePasswordSubmit = e => {
+          setPassword(e.target.value);
+          console.log(e.target.value);
+    }
+    
+    const handleRegister = e => {
+        handleUserSignIn(email, password)
+            .then((result) => {
+                history.push(redirect_uri);
+        })
+            .catch((error) => {
+            
+        });
+        e.preventDefault();
+    };
+
+    const handleGoogleLogin = () => {
+        signInUsingGoogle()
+        .then(result => {
+            history.push(redirect_uri);
+        })
+    }
+
     return (
         <div>
-            <h4>This islogin</h4>
             <div className="container form-container">
-            <Form>
+                <Form onSubmit={handleRegister}>
+                    <h3>Login with your account</h3>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
-                    <Form.Control type="email" placeholder="Enter email" />
+                    <Form.Control onBlur={handleEmailSubmit} type="email" placeholder="Enter email" />
                     <Form.Text className="text-muted">
                     We'll never share your email with anyone else.
                     </Form.Text>
@@ -22,16 +58,15 @@ const Login = () => {
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Label>Password</Form.Label>
-                    <Form.Control type="password" placeholder="Password" />
+                    <Form.Control onBlur={handlePasswordSubmit} type="password" placeholder="Password" />
                 </Form.Group>
-                <Button className="submit-button" variant="primary" type="submit">Login</Button>
+                <input className="btn btn-danger my-3" type="submit" value="Sign In" />
                     <br />
-                <Link to="/registration">New User</Link>
+                <Link className="already my-3" to="/registration">New User?</Link>
                     <p>Or</p>
-                <Button onClick={signInUsingGoogle} className="button">Google Sign In</Button>
+                <Button onClick={handleGoogleLogin} className="button">Google Sign In</Button>
                 <Button className="button">Twiter Sign In</Button>
                 </Form>
-               
            </div>
         </div>
     );

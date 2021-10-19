@@ -1,0 +1,36 @@
+.about-container{
+    padding: 10px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+.title{
+    width: 40%;
+    color: rgb(196, 70, 66);
+    font-weight: bold;
+}
+.details{
+    width: 60%;
+}
+
+@media only screen and (max-width: 688px) {
+    .service{
+        margin-left: 10px;
+        margin-right: 10px
+    }
+    .about-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .title{
+        width: 100%;
+        padding: 10px 100px;
+        
+    }
+    .details{
+        width: 100%;
+    }
+  }
