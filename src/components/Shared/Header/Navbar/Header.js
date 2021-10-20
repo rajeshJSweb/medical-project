@@ -36,12 +36,12 @@ const Header = () => {
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="me-auto menu-items">
-      <Nav.Link className="menu-item" href="/home">Home</Nav.Link>
-      <Nav.Link className="menu-item" href="/about">About</Nav.Link>
-      <Nav.Link className="menu-item" href="/home#service">Service</Nav.Link>
-      <Nav.Link className="menu-item" href="/contact">Contact</Nav.Link>
-      <Nav.Link className="menu-item" href="/articles">Articles</Nav.Link>
-      <Nav.Link className="menu-item" href="/login">Login</Nav.Link>
+      <Nav.Link className="menu-item" as={Link} to="/home">Home</Nav.Link>
+      <Nav.Link className="menu-item" as={Link} to="/about">About</Nav.Link>
+      <Nav.Link className="menu-item" as={Link} to="/home#service">Service</Nav.Link>
+      <Nav.Link className="menu-item" as={Link} to="/contact">Contact</Nav.Link>
+      <Nav.Link className="menu-item" as={Link} to="/articles">Articles</Nav.Link>
+      <Nav.Link className="menu-item" as={Link} to="/login">Login</Nav.Link>
                         </Nav>
     <Navbar.Text className="justify-content-end">
             <p>{user.displayName}</p>

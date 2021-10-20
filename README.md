@@ -1,6 +1,6 @@
 # Wellcome to Medibles react app
 
-This project is fully responsive website and created with react.js and live site host in firebase.
+Medibles is an online heathcare service platform in over the world created in 2021 by new web developer Rajesh Khoksi.
 
 ## Live site link
 
@@ -9,7 +9,26 @@ Open [https://medibles-web.web.app](https://medibles-web.web.app) to view it in 
 
 ### App description
 
-This is a medical based react application, in this app you will get fully responsive and also get lots of menu item.
+The app is HealthCare related website or react application, in this app you will get fully responsive and also get lots of menu item.
+
+Menu Item:[
+    1.Home
+    2.About
+    3.Contact
+    4.Services
+    5.Articles
+    6.Login
+]
+
+### App features
+
+1. There is three PrivateRoute components[
+    1.Services
+    2.Doctor
+    3.Articles
+]
+2. Email password user creation and also with google.
+3. Email password login system and google login system
 
 ### `yarn start`
 
