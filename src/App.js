@@ -16,7 +16,6 @@ import Contacts from './components/Contacts/Contacts';
 import Articles from './components/Articles/Articles';
 import Error from './components/NotFound/Error';
 import Services from './components/Services/Services';
-import Details from './Details/Details';
 import Specialist from './components/Specialist/Specialist';
 
 function App() {
