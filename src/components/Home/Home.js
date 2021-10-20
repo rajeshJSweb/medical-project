@@ -8,11 +8,12 @@ import Specialist from '../Specialist/Specialist';
 
 const Home = () => {
     const [services, setServices] = useState([]);
+
     useEffect(() => {
         fetch('/../services.json')
             .then(res => res.json())
             .then(data => setServices(data))
-    },[])
+    }, []);
     return (
         <div>
             {/* Banner / Carousel Section */}
@@ -23,9 +24,11 @@ const Home = () => {
             <div className="container mb-5">
                 <h2 className="my-5 text-danger service-title px-5">Our Services</h2>
                 <Row xs={1} md={3} className="g-4">
-                {
-                    services.map(service => <Services service={service}></Services>)
-                }
+                    {
+                        services.map(service => <Services
+                            key = {service.key}
+                            service={service}></Services>)
+                    }
                 </Row>
             </div>
 

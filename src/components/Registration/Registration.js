@@ -6,13 +6,14 @@ import { Link,useLocation,useHistory } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth/useAuth';
 
 const Registration = () => {
-    const { signInUsingGoogle, handleUserRegister } = useAuth();
+    const { signInUsingGoogle, handleUserRegister} = useAuth();
     const location = useLocation();
     const history = useHistory();
-    const redirect_uri = location.state?.from || '/home';
+    const redirect_uri = location.state?.from ||'/home';
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+
 
     const handleEmailSubmit = e => {
         setEmail(e.target.value);
@@ -25,16 +26,22 @@ const Registration = () => {
     }
 
     const handleRegister = e => {
+
         handleUserRegister(email, password);
         e.preventDefault();
     };
     
+
     const handleGoogleLogin = () => {
       signInUsingGoogle()
       .then(result => {
           history.push(redirect_uri);
       })
-  }
+      .catch((error) => {
+        console.log(error);
+      });
+    }
+    
     return (
         <div>
         <div className="container form-container">
@@ -57,7 +64,6 @@ const Registration = () => {
                 <Link className="already my-3" to="/login">Already User?</Link>
                     <p>Or</p>
                 <Button onClick={handleGoogleLogin } className="button">Google Sign In</Button>
-                <Button className="button">Twiter Sign In</Button>
                 </Form>
                
            </div>

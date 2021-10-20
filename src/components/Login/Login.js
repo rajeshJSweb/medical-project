@@ -65,7 +65,6 @@ const Login = () => {
                 <Link className="already my-3" to="/registration">New User?</Link>
                     <p>Or</p>
                 <Button onClick={handleGoogleLogin} className="button">Google Sign In</Button>
-                <Button className="button">Twiter Sign In</Button>
                 </Form>
            </div>
         </div>

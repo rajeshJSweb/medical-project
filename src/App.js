@@ -15,6 +15,9 @@ import Header from './components/Shared/Header/Navbar/Header';
 import Contacts from './components/Contacts/Contacts';
 import Articles from './components/Articles/Articles';
 import Error from './components/NotFound/Error';
+import Services from './components/Services/Services';
+import Details from './Details/Details';
+import Specialist from './components/Specialist/Specialist';
 
 function App() {
   return (
@@ -37,10 +40,16 @@ function App() {
           </Route>
           <Route exact path="/about">
             <About></About>
-          </Route>
-            <PrivateRoute exact path="/booking/:serviceId">
+            </Route>
+            <Route exact path="/services">
+              <Services></Services>
+            </Route>
+            <PrivateRoute exact path="/booking/:id">
               <Booking></Booking>
             </PrivateRoute>
+            <Route exact path='/specialist'>
+              <Specialist></Specialist>
+            </Route>
             <PrivateRoute exact path="/doctor/:id">
               <Doctors></Doctors>
             </PrivateRoute>

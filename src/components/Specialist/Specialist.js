@@ -23,7 +23,8 @@ const Specialist = () => {
                 </div>
                 <Row xs={1} md={4} className="g-4">
                     {
-                        doctors.map(doctor => <Col>
+                        doctors.map(doctor =>
+                            <Col>
                             <Card className="service">
                                <Card.Img className="service-img" variant="top" src={doctor.img} />
                                   <Card.Body>

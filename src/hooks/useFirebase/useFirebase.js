@@ -20,11 +20,10 @@ const useFirebase = () => {
         createUserWithEmailAndPassword(auth, email, password)
         .then(result => {
         })
-        .catch((error) => {
-        
+            .catch((error) => {
+            
         });
 }
-    
     const handleUserSignIn = (email, password) => {
        return signInWithEmailAndPassword(auth, email, password)
         
@@ -53,7 +52,8 @@ const useFirebase = () => {
         logOut,
         handleUserRegister,
         handleUserSignIn,
-        isLoading
+        isLoading,
+
     }
 }
 

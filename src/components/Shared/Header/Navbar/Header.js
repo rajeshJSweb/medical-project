@@ -47,7 +47,8 @@ const Header = () => {
             <p>{user.displayName}</p>
             {
             user.email ?
-              <Button className="btn btn-warning" onClick={signOut}>Sign Out</Button> :
+                    <Button className="btn btn-warning" onClick={signOut}>Sign Out</Button> :
+                    
               <Link to="/registration"><Button className="btn btn-warning">Sign Up</Button></Link>
           }
       </Navbar.Text>
