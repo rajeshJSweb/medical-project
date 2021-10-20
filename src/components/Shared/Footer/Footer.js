@@ -8,8 +8,8 @@ const Footer = () => {
         <div>
             <div className="footer-container bg-dark mt-5 d-flex">
                 <div className="left text-white py-5">
-                    <h1>Medibles</h1>
-                    <p className='description'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam sed in illum expedita, ipsum, explicabo unde mollitia dolorem, distinctio saepe quo possimus id laborum eveniet.</p>
+                    <h1><span className="medi">M</span>edibles</h1>
+                    <p className='description'>Soon after severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) vaccinations became public, menstruating women reported unexpected menstrual bleeding experiences post-vaccination. </p>
                 </div>
                 <div className="lefy-center text-white p-5">
                     <h4 className="heading">Department</h4>

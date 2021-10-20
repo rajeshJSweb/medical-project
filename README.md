@@ -1,10 +1,15 @@
-# Getting Started with Create React App
+# Wellcome to Medibles react app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is fully responsive website and created with react.js and live site host in firebase.
 
-## Available Scripts
+## Live site link
 
-In the project directory, you can run:
+Visit the app.\
+Open [https://medibles-web.web.app](https://medibles-web.web.app) to view it in the browser.
+
+### App description
+
+This is a medical based react application, in this app you will get fully responsive and also get lots of menu item.
 
 ### `yarn start`
 
