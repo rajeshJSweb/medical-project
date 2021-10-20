@@ -36,7 +36,7 @@ const Header = () => {
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="me-auto menu-items">
-      <Nav.Link className="menu-item" href="/home#home">Home</Nav.Link>
+      <Nav.Link className="menu-item" href="/home">Home</Nav.Link>
       <Nav.Link className="menu-item" href="/about">About</Nav.Link>
       <Nav.Link className="menu-item" href="/home#service">Service</Nav.Link>
       <Nav.Link className="menu-item" href="/contact">Contact</Nav.Link>

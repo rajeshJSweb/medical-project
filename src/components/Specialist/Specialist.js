@@ -32,8 +32,9 @@ const Specialist = () => {
                                         <Card.Text>
                                           {doctor.details}
                                         </Card.Text>
+                                        <Link to={`/doctor/${doctor.id}`}><Button className="btn btn-danger">Get Appointment</Button></Link>
                                     </Card.Body>
-                                  <Link to={`/doctor/${doctor.id}`}><Button className="btn btn-danger">Get Appointment</Button></Link>
+                                  
                             </Card>
                         </Col>)
                 }

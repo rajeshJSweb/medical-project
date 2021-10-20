@@ -26,8 +26,13 @@ const Registration = () => {
     }
 
     const handleRegister = e => {
-
-        handleUserRegister(email, password);
+        handleUserRegister(email, password)
+            .then(result => {
+                history.push(redirect_uri);
+        })
+            .catch((error) => {
+            
+        });
         e.preventDefault();
     };
     

@@ -2,6 +2,7 @@ import Button from '@restart/ui/esm/Button';
 import './contact.css'
 import React from 'react';
 import { Col, FloatingLabel, Form, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Contacts = () => {
     return (
@@ -65,9 +66,12 @@ const Contacts = () => {
   <Form.Group className="mb-3" id="formGridCheckbox">
     <Form.Check type="checkbox" label="Check me out" />
   </Form.Group>
-  <Button variant="primary" type="submit">
+  <Button className='btn btn-danger' variant="primary" type="submit">
     Submit
   </Button>
+  <Link to='/home'><Button className='btn btn-danger ms-3' variant="primary" type="submit">
+    Home
+  </Button></Link>
 </Form>
         </div>
     );

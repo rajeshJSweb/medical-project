@@ -1,3 +1,9 @@
+.top-title{
+    background-color: lightblue;
+    height: 200px;
+    opacity: 0.2;
+    margin-bottom: 3%;
+}
 .image{
     height: 300px;
 }
